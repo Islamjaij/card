@@ -1,10 +1,17 @@
-function updateDateTime() {
-    let now = new Date();
-    let formattedDate = now.toISOString().slice(0, 10); // YYYY-MM-DD
-    let formattedTime = now.toLocaleTimeString();
-    document.getElementById("datetime").innerHTML = ${formattedDate} br> ${formattedTime};
+function updateTime() {
+    const now = new Date();
+    
+    // تحديث التاريخ
+    const date = now.toISOString().split('T')[0];
+    document.getElementById("current-date").textContent = date;
+
+    // تحديث الوقت
+    const time = now.toLocaleTimeString("ar-EG", { hour12: false });
+    document.getElementById("current-time").textContent = time;
 }
 
 // تحديث الوقت كل ثانية
-setInterval(updateDateTime, 1000);
-updateDateTime();
+setInterval(updateTime, 1000);
+
+// تشغيل الدالة عند تحميل الصفحة
+updateTime();
