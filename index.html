@@ -5,40 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>بطاقة الطالب</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <header>
-            <img src="logo.png" class="logo" alt="الشعار">
-            <button class="download-btn">حمل التطبيق الآن</button>
-        </header>
         <div class="card">
-            <h3>إدارة ونظم المعلومات بالمصرية للعلوم والتكنولوجيا بالمنيا</h3>
-            <div class="student-info">
-                <div class="text">
-                    <h2>إسلام خالد عبد الله محمد</h2>
+            <div class="header">
+                <p>إدارة ونظم المعلومات المصرية للعلوم والتكنولوجيا بالمنيا</p>
+                <img src="logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="info">
+                <div class="profile">
+                    <img src="profile.jpg" alt="صورة الطالب">
+                </div>
+                <div class="details">
+                    <h2>إسلام خالد عبدالله محمد</h2>
                     <p>23-0221916559</p>
                     <p>نظم معلومات، فرقة ثانية</p>
                 </div>
-                <img src="student.jpg" class="student-img" alt="صورة الطالب">
             </div>
-            <div class="badge">
-                <span class="year">2025-2024</span>
-                <span class="code">30134</span>
-            </div>
-            <div class="info-box">
+            <div class="year-badge">2025-2024</div>
+            <div class="student-id">
                 <p><strong>ID:</strong> 30304122402219</p>
-                <p id="date"></p>
-                <p id="time"></p>
+                <p id="date-time"></p>
             </div>
         </div>
-        <nav class="bottom-nav">
-            <i class="icon menu"></i>
-            <i class="icon bell"></i>
-            <i class="icon users"></i>
-            <i class="icon home"></i>
-        </nav>
     </div>
-    <script src="script.js"></script>
+
+    <div class="bottom-nav">
+        <div class="icon"><img src="menu.png" alt="القائمة"></div>
+        <div class="icon"><img src="bell.png" alt="الإشعارات"></div>
+        <div class="icon"><img src="users.png" alt="المستخدمين"></div>
+        <div class="icon"><img src="home.png" alt="الرئيسية"></div>
+    </div>
 </body>
 </html>
